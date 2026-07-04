@@ -1,0 +1,17 @@
+# Rust / Soroban
+contracts/target/
+**/*.rs.bk
+
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Env
+.env
+.env.local
+*.local
+
+# OS / editor
+.DS_Store
+*.log
