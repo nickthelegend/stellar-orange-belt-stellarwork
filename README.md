@@ -23,7 +23,7 @@ escrows and never has to migrate when the escrow is upgraded.
 
 | | |
 |---|---|
-| **Live demo** | ⚠️ _add your Vercel/Netlify URL here_ |
+| **Live demo** | **https://nickthelegend.github.io/stellar-orange-belt-stellarwork/** |
 | **Demo video (1–2 min)** | ⚠️ _add your video link here_ |
 | **Escrow contract** | [`CCIYGH3XJKOZAXNN7BIXK73MZE7TL5AP6BAX4WAGUM36NXAKF252MKBS`](https://stellar.expert/explorer/testnet/contract/CCIYGH3XJKOZAXNN7BIXK73MZE7TL5AP6BAX4WAGUM36NXAKF252MKBS) |
 | **Reputation contract** | [`CBM7O2CVKHQVUBISDCQO6CCKV5UL3EJEY3SNRF7DQWB4HKGXU5L66WFP`](https://stellar.expert/explorer/testnet/contract/CBM7O2CVKHQVUBISDCQO6CCKV5UL3EJEY3SNRF7DQWB4HKGXU5L66WFP) |
