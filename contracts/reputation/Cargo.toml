@@ -1,0 +1,19 @@
+[package]
+name = "reputation"
+version = "1.0.0"
+edition = "2021"
+description = "On-chain reputation ledger. Only authorized reporter contracts may write scores."
+
+[lib]
+# `cdylib` builds the deployable wasm; `rlib` lets the escrow contract import the
+# generated `ReputationClient` for type-safe cross-contract calls and tests.
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+soroban-sdk = "25.3.1"
+
+[dev-dependencies]
+soroban-sdk = { version = "25.3.1", features = ["testutils"] }
+
+[features]
+testutils = ["soroban-sdk/testutils"]
