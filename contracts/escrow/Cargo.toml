@@ -1,0 +1,22 @@
+[package]
+name = "escrow"
+version = "1.0.0"
+edition = "2021"
+description = "Milestone escrow for StellarWork. Holds job funds and reports outcomes to the reputation ledger via a cross-contract call."
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+soroban-sdk = "25.3.1"
+
+# NOTE: the reputation contract is intentionally a *dev*-dependency only. Linking
+# a full contract crate (with its own `__constructor`/exports) into this wasm
+# would collide symbols, so at runtime the escrow reaches reputation the way any
+# production contract reaches another — a loosely-coupled `invoke_contract` call.
+# In tests we register a real reputation instance to exercise the whole system.
+[dev-dependencies]
+soroban-sdk = { version = "25.3.1", features = ["testutils"] }
+# Enable the reputation contract's testutils so we can register a real instance
+# of it inside the escrow integration tests.
+reputation = { path = "../reputation", features = ["testutils"] }
