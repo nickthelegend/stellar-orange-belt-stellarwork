@@ -1,0 +1,21 @@
+{
+  "network": "testnet",
+  "networkPassphrase": "Test SDF Network ; September 2015",
+  "rpcUrl": "https://soroban-testnet.stellar.org",
+  "horizonUrl": "https://horizon-testnet.stellar.org",
+  "deployedAt": "2026-07-04",
+  "admin": "GB2KE2EOJPGASXT3QYVFG2P2VCFYELAPFGZLZFDC5GMWE5XIEJXJ5A5E",
+  "contracts": {
+    "reputation": "CBM7O2CVKHQVUBISDCQO6CCKV5UL3EJEY3SNRF7DQWB4HKGXU5L66WFP",
+    "escrow": "CCIYGH3XJKOZAXNN7BIXK73MZE7TL5AP6BAX4WAGUM36NXAKF252MKBS",
+    "token_native_sac": "CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC"
+  },
+  "demoAccounts": {
+    "worker": "GAYWGX7XZYB377C4K7S4BWOZ7PEVJ4DQHQNCMEPYAHHHTGZISEKWIIQ4"
+  },
+  "transactions": {
+    "add_reporter": "a491a78159eaa9f77ad06c11e7f620765a63ac5cbc4a71192a49a097b0fb3a6f",
+    "create_job": "cd7240a414260e8313184bfa7dfc0d56f6bb9e6730bc155b8260aa2d55c9c2df",
+    "release_with_cross_contract_call": "45ac5c7b827d4379596fb17b2a8478f849c63066e7dfd48dd87574407314c7be"
+  }
+}
